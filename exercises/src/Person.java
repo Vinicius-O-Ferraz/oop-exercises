@@ -1,32 +1,45 @@
-import javax.print.attribute.IntegerSyntax;
-
 public class Person {
     
-    public String nome;
-    public Integer idade;
-    public String sexo;
+    private String name;
+    private Integer age;
+    private String sex;
 
-    public Person(String nome, Integer idade, String sexo){
-        this.nome = nome;
-        this.idade = idade;
-        this.sexo = sexo;
+    public Person(String name, Integer age, String sex){
+        this.name = name;
+        this.age = age;
+        this.sex = sex;
     }
 
-    public String getNome(){
-        return this.nome;
+    public String getName(){
+        return name;
     }
 
-    public Integer getIdade(){
-        return this.idade;
+    public Integer getAge(){
+        return age ;
     }
 
-    public String getSexo(){
-        return this.sexo;
+    public String getSex(){
+        return sex;
     }
 
-    public void FazerAniversario(){
-        this.idade++;
-        System.out.println(this.nome + "Fez aniversário, agora ele tem" + this.idade + "anos");
+
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+    public void setAge(int age){
+        this.age = age;
+    }
+
+    public void setSex(String sex){
+        this.sex = sex;
+    }
+
+
+    public void havingBirthday(){
+        this.age++;
+        System.out.println(this.name + "Fez aniversário, agora ele tem " + this.age + " anos de idade");
     }
 
 }
