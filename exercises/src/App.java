@@ -1,10 +1,12 @@
 
 public class App {
     public static void main(String[] args) throws Exception {
-        Pessoa pessoa = new Pessoa("Monark", 42, "M");
+        Person person = new Person("Monark", 42, "M");
         System.out.println();
-        System.out.println(pessoa.getNome());
-        System.out.println(pessoa.getIdade());
-        System.out.println(pessoa.getSexo());
+        System.out.println(person.getNome());
+        System.out.println(person.getIdade());
+        System.out.println(person.getSexo());
+        person.FazerAniversario();
+
     } 
 }

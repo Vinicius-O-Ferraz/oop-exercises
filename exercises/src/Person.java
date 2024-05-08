@@ -1,12 +1,12 @@
 import javax.print.attribute.IntegerSyntax;
 
-public class Pessoa {
+public class Person {
     
     public String nome;
     public Integer idade;
     public String sexo;
 
-    public Pessoa(String nome, Integer idade, String sexo){
+    public Person(String nome, Integer idade, String sexo){
         this.nome = nome;
         this.idade = idade;
         this.sexo = sexo;
@@ -22,6 +22,11 @@ public class Pessoa {
 
     public String getSexo(){
         return this.sexo;
+    }
+
+    public void FazerAniversario(){
+        this.idade++;
+        System.out.println(this.nome + "Fez aniversário, agora ele tem" + this.idade + "anos");
     }
 
 }
