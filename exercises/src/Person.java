@@ -22,8 +22,6 @@ public class Person {
         return sex;
     }
 
-
-
     public void setName(String name){
         this.name = name;
     }
@@ -35,7 +33,6 @@ public class Person {
     public void setSex(String sex){
         this.sex = sex;
     }
-
 
     public void havingBirthday(){
         this.age++;
