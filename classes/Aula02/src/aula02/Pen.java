@@ -11,20 +11,29 @@ public class Pen {
 
     //methods declaration
     void write(){
-
+        if (this.capOn){
+            System.out.println("Error");
+            System.out.println("Can't write the cap is on");
+        }
+        else{
+            System.out.println("Writing things down");
+        }
     }
 
     void cap(){
-        
+        this.capOn = true;
     }
 
     void uncap(){
-        
+        this.capOn = false;
     }
 
     void status(){
-        System.out.println("A "+ this.color+ "pen");
-        System.out.println("This pen is" + this.capOn);
+        System.out.println("Pen model: "+ this.model);
+        System.out.println("Pen color: "+ this.color);
+        System.out.println("Pen capped: " + this.capOn);
+        System.out.println("Pen charge: " + this.charge);
+        System.out.println("Pen tip: " + this.tip);
     }
 
 
