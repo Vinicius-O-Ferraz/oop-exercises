@@ -101,8 +101,8 @@ public class RemoteController implements Contoller{
 
     @Override
     public void pause() {
-        if (this.getOn() && this.getPlaying()){
-            this.setPlaying(false);
+         if (this.getOn() && !this.getPlaying()){
+            this.setPlaying(true);
         }
     }
 }
